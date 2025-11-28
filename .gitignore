@@ -1,0 +1,34 @@
+# Build directories
+build/
+out/
+bin/
+lib/
+*.exe
+*.o
+*.obj
+*.dll
+*.dylib
+*.so
+
+# IDEs
+.vscode/
+.idea/
+*.sln
+*.vcxproj
+*.vcxproj.user
+.vs/
+.cache/
+
+# Benchmark Results
+*.csv
+*.json
+*.log
+bench_results/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Dependencies
+external/
+

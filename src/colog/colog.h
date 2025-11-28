@@ -15,9 +15,14 @@
 #include "sink.h"
 #include "console_sink.h"
 #include "file_sink.h"
+#include "null_sink.h"
 
-// Logger
+// Synchronous Logger
 #include "logger.h"
+
+// Async Logger
+#include "async_logger.h"
+#include "async/async_backend.h"
 
 // Registry
 #include "registry.h"

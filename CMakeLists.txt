@@ -32,10 +32,17 @@ set(COLOG_SOURCES
     src/colog/console_sink.cpp
     src/colog/logger.cpp
     src/colog/registry.cpp
+    # Async components
+    src/colog/async/async_backend.cpp
+    src/colog/async_logger.cpp
 )
 
 add_library(colog STATIC ${COLOG_SOURCES})
 target_include_directories(colog PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
+
+# Thread support for async backend
+find_package(Threads REQUIRED)
+target_link_libraries(colog PUBLIC Threads::Threads)
 
 # --- Demo Executable ---
 add_executable(colog_demo src/main.cpp)

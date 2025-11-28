@@ -1,13 +1,13 @@
 # CoLog Development Roadmap
 
 ## Phase 1: Baseline (Synchronous Logger)
-- [ ] Define public `Logger` interface (`log`, `info`, `warn`).
-- [ ] Implement `Formatter` interface and a basic `PatternFormatter` (Text).
-- [ ] Implement `Sink` interface and `FileSink` (std::fstream).
-- [ ] Implement `ConsoleSink` (std::cout).
-- [ ] Implement global Logger Registry (Singleton/Static access).
-- [ ] Add thread safety (std::mutex) for the synchronous path.
-- [ ] **Milestone**: Write a "Hello World" log to a file.
+- [x] Define public `Logger` interface (`log`, `info`, `warn`).
+- [x] Implement `Formatter` interface and a basic `PatternFormatter` (Text).
+- [x] Implement `Sink` interface and `FileSink` (std::fstream).
+- [x] Implement `ConsoleSink` (std::cout).
+- [x] Implement global Logger Registry (Singleton/Static access).
+- [x] Add thread safety (std::mutex) for the synchronous path.
+- [x] **Milestone**: Write a "Hello World" log to a file.
 
 ## Phase 2: Async Core (C++20 Coroutines)
 - [ ] Design the `AsyncBackend` class.
@@ -35,4 +35,3 @@
 - [ ] Write detailed usage documentation.
 - [ ] Generate Doxygen API docs.
 - [ ] Release v0.1.0.
-

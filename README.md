@@ -50,6 +50,7 @@ This project aims to be a production-grade logger that rivals established librar
 
 ## 📂 Documentation
 
+- [**Phase1 Implementation**](docs/PHASE1.md): 詳細說明 Phase1 同步日誌系統的實作、技術細節和架構設計（繁體中文）
 - [**Architecture Design**](docs/ARCHITECTURE.md): Detailed breakdown of the Logger-Formatter-Sink model and Async Backend.
 - [**Benchmark Plan**](docs/BENCHMARK_PLAN.md): Experimental design, variables, metrics, and scenarios.
 - [**Roadmap**](TODO.md): Development phases from baseline to advanced features.
